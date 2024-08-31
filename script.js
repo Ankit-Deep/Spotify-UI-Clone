@@ -5,7 +5,7 @@ playDivs.forEach(evt => {
     playSign.classList.add('fa-solid', 'fa-circle-play');
     playSign.style.position = 'relative';
     playSign.style.left = '40%';
-    playSign.style.bottom = '50%';
+    playSign.style.top = '-40%';
     playSign.style.fontSize= '3vw';
     playSign.style.color = '#1ED760';
     playSign.style.backgroundColor = 'black';
@@ -15,15 +15,12 @@ playDivs.forEach(evt => {
         let parent = e.target;
         console.log(parent);
         parent.appendChild(playSign);
-
-
-        
     })
     
-    evt.addEventListener('mouseleave  ', (e)=> {
+    evt.addEventListener('mouseleave', (e)=> {
         let parent = e.target;
-        // parent.removeChild(playSign);
         playSign.remove();
+        // alert("works")
     })
     
 
