@@ -344,7 +344,8 @@ nav {
 }
 
 .album-artists , .song-artists {
-    width: fit-content;
+    overflow-wrap: break-word;
+    white-space: normal;
     font-weight: 500;
     font-size: 0.95vw;
     color: var(--grey-text);
