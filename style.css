@@ -18,11 +18,6 @@ body {
     --grey-text: rgb(186, 186, 186);
 }
 
-/* .main-container {
-    background-color: black;
-    color: white;
-} */
-
 aside {
     background-color: black;
     width: 28vw;
@@ -236,7 +231,6 @@ nav {
 }
 
 .popular-artists {
-    /* border: 2px solid white; */
     height: 25%;    
 }
 
@@ -269,6 +263,28 @@ nav {
     padding: 1vw;
 }
 
+/* .play {
+    z-index: 1;
+}
+
+.play > .playSign {
+    display: none;
+    font-size: 3vw;
+    z-index: 2;
+    position: relative;
+    left: 30%;
+    bottom: 25%;
+} */
+
+.play:hover {
+    background-color: var(--grey);
+    border-radius: 10px;
+}
+
+.play:hover .playSign {
+    display: block;
+}
+
 .artist-details {
     display: flex;
     flex-direction: column;
@@ -295,8 +311,12 @@ nav {
 
 /* Popular album starts */
 .popular-albums, .recently-played-songs {
-    /* border: 2px solid white; */
     height: 25%;
+}
+
+.pop-art-options > h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .all-albums, .all-songs {
@@ -304,6 +324,7 @@ nav {
     height: 84%;
     display: flex;
     margin-left: 0.5vw;
+    white-space: nowrap;
 }
 
 .album, .song {
@@ -329,16 +350,13 @@ nav {
 .album-name, .song-name {
     font-size: 1vw;
     margin-bottom: 0.35vw;
-    /* text-indent: 5; */
-
 }
 
 .album-artists , .song-artists {
+    width: fit-content;
     font-weight: 500;
     font-size: 0.95vw;
     color: var(--grey-text);
-    /* padding-right:5vw; */
-    /* margin-right: 1.25vw; */
 }
 /* Popular album ends */
 
@@ -347,7 +365,6 @@ nav {
     width: 100%;
     border-radius: 5px;
 }
-
 
 /* Recently played songs ends */
 
