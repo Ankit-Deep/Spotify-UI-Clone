@@ -227,7 +227,6 @@ nav {
 
 .main-section {
     background-color: var(--grey);
-    height: 200%;
 }
 
 .popular-artists {
@@ -368,17 +367,60 @@ nav {
 
 /* Recently played songs ends */
 
+/* Footer starts */
+footer {
+    height: 25%;
+    width: 100%;
+    margin: 5vw 0vw;
+    padding-bottom: 5vw;
+}
+
+.upper-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+.upper-footer div {
+    line-height: 1.90;
+}
+
+.upper-footer div h4 {
+    font-size: 1.1vw;
+}
+
+.upper-footer div p {
+    color: var(--grey-text);
+    font-weight: 500;
+}
+
+.social-media {
+    display: flex;
+    margin-top: 0.5vw;
+}
+
+.social-media div {
+    font-size: 1.25vw;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5vw;
+    text-align: center;  
+    background-color: var(--grey);
+    cursor: pointer;
+}
+
+footer .copyright {
+    color: var(--grey-text);
+    margin-left: 2vw;
+    font-size: 0.95vw;
+    font-weight: 500;
+}
 
 
 
-
-
-
-
-
-
-
-
+/* Footer ends */
 
 
 /* Main ends */
