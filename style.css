@@ -397,7 +397,7 @@ footer {
 
 .social-media {
     display: flex;
-    margin-top: 0.5vw;
+    margin-top: 0.25vw;
 }
 
 .social-media div {
@@ -418,10 +418,7 @@ footer .copyright {
     font-weight: 500;
 }
 
-
-
 /* Footer ends */
-
 
 /* Main ends */
 
