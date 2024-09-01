@@ -86,6 +86,11 @@ aside > .upper-aside {
     display: flex;
     align-items: center;
     gap: 0.75vw;
+    cursor: pointer;
+}
+
+.your-library span:hover {
+    color: white;
 }
 
 .your-library img {
@@ -130,13 +135,18 @@ aside > .upper-aside {
 
 .inner-createPlaylist button {
     background-color: #fff;
-    font-size: 1vw;
+    font-size: 0.95vw;
     font-weight: 700;
     border: none;
-    padding: 0.25vw 1.5vw;
+    padding: 0.35vw 1vw;
     border-radius: 20px;
     margin: 1vw 0;
     cursor: pointer;
+    text-align: center;
+}
+
+.inner-createPlaylist button:hover {
+    font-size: 1vw;
 }
 
 .guidelines {
@@ -152,6 +162,10 @@ aside > .upper-aside {
     display: flex;
     flex-wrap: wrap;
     gap: 1.25vw;
+}
+
+.website-compliance span:hover {
+    cursor: pointer;
 }
 
 .language {
@@ -184,7 +198,7 @@ main {
     width: 72vw;
     height: 100vh;
     color: white;
-    background-color: black;
+    /* background-color: black; */
     margin-right: 0.5vw;
     /* padding-left: 1vw; */
 }
@@ -194,11 +208,15 @@ html::-webkit-scrollbar {
 } 
 
 nav {
-    background-color: var(--dark-grey);
+    width: 72vw;
+    background-color: black ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .icons i {
@@ -220,6 +238,12 @@ nav {
     font-size: 1.1vw;
 }
 
+.sign-up:hover {
+    color: white;
+    font-size: 1.15vw;
+    cursor: pointer;
+}
+
 .log-in {
     padding: 0.675vw 1.75vw;
     border: none;
@@ -228,9 +252,15 @@ nav {
     font-weight: 700;
     font-size: 1.1vw;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.log-in:hover {
+    font-size: 1.125vw;
 }
 
 .main-section {
+    margin-top: 4.5vw;
     background-color: var(--grey);
 }
 
@@ -257,14 +287,16 @@ nav {
     height: 84%;
     display: flex;
     margin-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 .artist {
     margin-top: 1vw;
-    height: 90%;
+    max-height: 85%;
     width: 16.5%;
     text-align: center;
     padding: 1vw;
+    position: relative;
 }
 
 .play:hover {
@@ -317,14 +349,16 @@ nav {
     margin-left: 0.5vw;
     white-space: nowrap;
     position: relative;
+    padding-right: 0.5vw;
 }
 
 .album, .song {
     margin-top: 1vw;
-    height: 90%;
+    max-height: 90%;
     width: 16.5%;
     text-align: center;
     padding: 1vw;
+    position: relative;
 }
 
 .album img {
