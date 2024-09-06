@@ -1,5 +1,6 @@
 const playDivs = document.querySelectorAll('.play');
 let audio;
+let songToBePlayed;
 
 playDivs.forEach(playDiv => {
     
@@ -33,18 +34,15 @@ playDivs.forEach(playDiv => {
         let parent = e.target;
         playDiv.appendChild(playSign);
         // playSign.style.display = 'block';
+        // playSign.style.display = 'block';
     })
     
     playDiv.addEventListener('mouseleave', (e)=> {
         let parent = e.target;
         playSign.remove();
-        // playDiv.appendChild(pauseSign);
-        // playSign.style.display = 'none';
-        // pauseSign.style.display = 'block';
-
     })
     
-    let songToBePlayed;
+    // let songToBePlayed;
     playSign.addEventListener('click', (e)=> {
         pauseSign.style.display = 'block';
         playDiv.appendChild(pauseSign);
