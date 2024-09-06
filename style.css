@@ -195,16 +195,15 @@ aside > .upper-aside {
 main {
     border-radius: 30px;
     float: right;
-    width: 72vw;
+    width: 73vw;
     height: 100vh;
     color: white;
-    /* background-color: black; */
     margin-right: 0.5vw;
-    /* padding-left: 1vw; */
+    padding-left: 1vw;
 }
 
 html::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Edge */
+    display: none; /*Chrome, Safari, and Edge*/
 } 
 
 nav {
